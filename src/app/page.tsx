@@ -176,8 +176,7 @@ export default function Home() {
           </h2>
           <p className="max-w-md text-white/80">
             Tell us what you&apos;re trying to build and we&apos;ll get back
-            to you with next steps – no pricing surprises, just a
-            conversation.
+            to you with the next steps – just a conversation.
           </p>
           <Button
             size="lg"
