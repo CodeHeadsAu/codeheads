@@ -22,7 +22,7 @@ export default function ContactPage() {
           </h1>
           <p className="mt-6 max-w-md text-lg text-ink-soft">
             Tell us what you&apos;re trying to build. We&apos;ll reply with
-            next steps and, if it&apos;s a good fit we&apos;ll have a
+            the next steps, and if it&apos;s a good fit we&apos;ll have a
             conversation tailored to your project.
           </p>
         </div>

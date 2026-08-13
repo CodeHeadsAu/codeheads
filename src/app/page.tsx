@@ -169,7 +169,7 @@ export default function Home() {
 
       <section className="bg-bold py-20 text-white">
         <Container className="flex flex-col items-center gap-6 text-center">
-          <h2 className="max-w-xl text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="max-w-2xl text-2xl font-bold tracking-tight sm:text-nowrap sm:text-4xl">
             Have a project in mind? Let&apos;s build it.
           </h2>
           <p className="max-w-md text-white/80">
