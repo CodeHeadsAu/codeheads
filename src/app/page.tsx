@@ -58,7 +58,7 @@ export default function Home() {
                 size="lg"
                 className="h-11 bg-accent px-6 text-base text-accent-foreground hover:bg-accent/90"
                 nativeButton={false}
-                render={<Link href="/contact">Start a project</Link>}
+                render={<Link href="/contact">Start a Project</Link>}
               />
               <Button
                 variant="outline"

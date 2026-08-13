@@ -132,7 +132,7 @@ export default function ServicesPage() {
             size="lg"
             className="h-11 px-6 text-base"
             nativeButton={false}
-            render={<Link href="/contact">Start a project</Link>}
+            render={<Link href="/contact">Start a Project</Link>}
           />
         </Container>
       </section>

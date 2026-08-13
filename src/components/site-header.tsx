@@ -45,7 +45,7 @@ export function SiteHeader() {
         <div className="hidden md:block">
           <Button
             nativeButton={false}
-            render={<Link href="/contact">Start a project</Link>}
+            render={<Link href="/contact">Start a Project</Link>}
           />
         </div>
 
@@ -81,7 +81,7 @@ export function SiteHeader() {
               nativeButton={false}
               render={
                 <Link href="/contact" onClick={() => setOpen(false)}>
-                  Start a project
+                  Start a Project
                 </Link>
               }
             />
