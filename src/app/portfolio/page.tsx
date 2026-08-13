@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import { Container } from "@/components/container";
 import { Card } from "@/components/ui/card";
@@ -54,24 +54,12 @@ export default function PortfolioPage() {
                     ))}
                   </div>
                 )}
-                <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2">
-                  <Link
-                    href={project.href}
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-bold hover:underline"
-                  >
-                    Read the case study <ArrowRight className="size-4" />
-                  </Link>
-                  {project.externalUrl && (
-                    <a
-                      href={project.externalUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-sm text-ink-soft hover:text-foreground hover:underline"
-                    >
-                      Visit site <ArrowUpRight className="size-3.5" />
-                    </a>
-                  )}
-                </div>
+                <Link
+                  href={project.href}
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-bold hover:underline"
+                >
+                  Read the case study <ArrowRight className="size-4" />
+                </Link>
               </Card>
             ))}
           </div>

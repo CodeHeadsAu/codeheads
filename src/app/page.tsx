@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Rocket, Wrench, Zap } from "lucide-react";
+import { ArrowRight, Rocket, Wrench, Zap } from "lucide-react";
 
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
@@ -51,7 +51,7 @@ export default function Home() {
             <p className="mt-6 max-w-lg text-lg text-white/80">
               We build websites and web applications for small businesses in
               Australia that don&apos;t have the time or resources to do it
-              themselves – modern, fast, and made to grow with you.
+              themselves – smart, fast, and made to grow with you.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Button
@@ -157,24 +157,12 @@ export default function Home() {
                     ))}
                   </div>
                 )}
-                <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2">
-                  <Link
-                    href={project.href}
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-bold hover:underline"
-                  >
-                    Read the case study <ArrowRight className="size-4" />
-                  </Link>
-                  {project.externalUrl && (
-                    <a
-                      href={project.externalUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-sm text-ink-soft hover:text-foreground hover:underline"
-                    >
-                      Visit site <ArrowUpRight className="size-3.5" />
-                    </a>
-                  )}
-                </div>
+                <Link
+                  href={project.href}
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-bold hover:underline"
+                >
+                  Read the case study <ArrowRight className="size-4" />
+                </Link>
               </Card>
             ))}
           </div>

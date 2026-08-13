@@ -37,6 +37,7 @@ export const caseStudies: CaseStudy[] = [
       "AI-assisted content tools for listing descriptions and SEO",
     ],
     href: "/portfolio/party-hero",
+    externalUrl: "https://partyhero.com.au",
   },
   {
     slug: "get-loose",
