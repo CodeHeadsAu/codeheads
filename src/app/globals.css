@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #14101f;
+
+  /* CodeHeads brand: deep violet as the bold primary, electric lime as the
+     sharp accent reserved for the biggest CTAs. */
+  --color-bold: #4c1d95;
+  --color-bold-deep: #2e1065;
+  --color-lime: #c6ff3d;
+  --color-lime-strong: #aee61f;
+  --color-paper: #f5f2fc;
+  --color-ink-soft: #625b72;
+  --color-line: #e4def0;
+
+  --card: #ffffff;
+  --card-foreground: var(--foreground);
+  --popover: #ffffff;
+  --popover-foreground: var(--foreground);
+
+  --primary: var(--color-bold);
+  --primary-foreground: #ffffff;
+
+  --secondary: var(--color-paper);
+  --secondary-foreground: var(--color-bold);
+
+  --muted: var(--color-paper);
+  --muted-foreground: var(--color-ink-soft);
+
+  /* Reserved for high-impact CTAs (bg-accent), not used by default
+     shadcn hover states in this project. */
+  --accent: var(--color-lime);
+  --accent-foreground: var(--color-bold-deep);
+
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+
+  --border: var(--color-line);
+  --input: var(--color-line);
+  --ring: var(--color-bold);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-bold: var(--color-bold);
+  --color-bold-deep: var(--color-bold-deep);
+  --color-lime: var(--color-lime);
+  --color-lime-strong: var(--color-lime-strong);
+  --color-paper: var(--color-paper);
+  --color-ink-soft: var(--color-ink-soft);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
