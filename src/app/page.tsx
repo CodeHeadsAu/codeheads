@@ -65,7 +65,7 @@ export default function Home() {
                 size="lg"
                 className="h-11 border-white/30 bg-transparent px-6 text-base text-white hover:bg-white/10"
                 nativeButton={false}
-                render={<Link href="/portfolio">See our work</Link>}
+                render={<Link href="/portfolio">See Our Work</Link>}
               />
             </div>
           </div>
