@@ -1,6 +1,6 @@
 # CodeHeads
 
-Marketing site for CodeHeads — custom websites & web apps. Next.js (App Router), TypeScript, Tailwind CSS, hosted on Vercel.
+Marketing site for CodeHeads – custom websites & web apps. Next.js (App Router), TypeScript, Tailwind CSS, hosted on Vercel.
 
 ## Stack
 
@@ -21,21 +21,21 @@ pnpm dev
 Open [http://localhost:3000](http://localhost:3000).
 
 Without `RESEND_API_KEY` set, the contact form's submit endpoint returns a clean
-error to the visitor and logs why — it never throws or breaks the page.
+error to the visitor and logs why – it never throws or breaks the page.
 
 ## Pages
 
-- `/` — Home
-- `/services` — Services
-- `/portfolio` — Portfolio index
-- `/portfolio/[slug]` — Case study detail, sourced from `src/lib/portfolio.ts`
-- `/contact` — Contact form
+- `/` – Home
+- `/services` – Services
+- `/portfolio` – Portfolio index
+- `/portfolio/[slug]` – Case study detail, sourced from `src/lib/portfolio.ts`
+- `/contact` – Contact form
 
 ## Adding a new case study
 
 Add an entry to the `caseStudies` array in `src/lib/portfolio.ts`. The
 portfolio index and `/portfolio/[slug]` detail page are both driven from
-that array — no other changes needed.
+that array – no other changes needed.
 
 ## Deploy
 

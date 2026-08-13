@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "CodeHeads builds custom websites and web apps — from marketing sites to full-stack applications with databases, logins, and payments.",
+    "CodeHeads builds custom websites and web apps – from marketing sites to full-stack applications with databases, logins, and payments.",
 };
 
 const INCLUDES = [
@@ -22,13 +22,13 @@ const INCLUDES = [
     icon: Layers,
     title: "Frontend build",
     description:
-      "Fast, responsive, accessible pages coded by hand with modern tools — Next.js, React, Tailwind.",
+      "Fast, responsive, accessible pages coded by hand with modern tools – Next.js, React, Tailwind.",
   },
   {
     icon: Server,
     title: "Backend & integrations",
     description:
-      "When your site needs more than pages — logins, databases, payments, or third-party APIs — we build that too.",
+      "When your site needs more than pages – logins, databases, payments, or third-party APIs – we build that too.",
   },
   {
     icon: Rocket,
@@ -49,7 +49,7 @@ const PROCESS = [
     step: "02",
     title: "Design & build",
     description:
-      "We design and build in the open — you see progress as it happens, not just a reveal at the end.",
+      "We design and build in the open – you see progress as it happens, not just a reveal at the end.",
   },
   {
     step: "03",
@@ -72,7 +72,7 @@ export default function ServicesPage() {
           </h1>
           <p className="mt-6 max-w-xl text-lg text-ink-soft">
             One service, done properly: a site built specifically for your
-            business — whether that&apos;s a sharp marketing site or a
+            business – whether that&apos;s a sharp marketing site or a
             full-blown web application with logins, data, and payments
             behind it.
           </p>
@@ -125,7 +125,7 @@ export default function ServicesPage() {
           </h2>
           <p className="max-w-md text-ink-soft">
             Tell us roughly what you&apos;re trying to build and we&apos;ll
-            help you figure out the right scope — no quote required to start
+            help you figure out the right scope – no quote required to start
             the conversation.
           </p>
           <Button

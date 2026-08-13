@@ -24,7 +24,7 @@ export default function PortfolioPage() {
             Work we&apos;ve built
           </h1>
           <p className="mt-6 max-w-xl text-lg text-ink-soft">
-            A look at what we&apos;ve shipped — real, production builds, not
+            A look at what we&apos;ve shipped – real, production builds, not
             mockups.
           </p>
         </Container>

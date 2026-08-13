@@ -11,13 +11,13 @@ const CAPABILITIES = [
     icon: Wrench,
     title: "Built, not templated",
     description:
-      "Every site is custom-coded to what your business actually needs — no drag-and-drop builder ceilings, no fighting a theme.",
+      "Every site is custom-coded to what your business actually needs – no drag-and-drop builder ceilings, no fighting a theme.",
   },
   {
     icon: Zap,
     title: "Full-stack when you need it",
     description:
-      "From marketing pages to logins, databases, and payments — we build as much app as your idea requires.",
+      "From marketing pages to logins, databases, and payments – we build as much app as your idea requires.",
   },
   {
     icon: Rocket,
@@ -50,7 +50,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 max-w-lg text-lg text-white/80">
               CodeHeads designs and builds bespoke websites and web
-              applications for businesses that want more than a template —
+              applications for businesses that want more than a template –
               modern, fast, and made to grow with you.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -174,7 +174,7 @@ export default function Home() {
           </h2>
           <p className="max-w-md text-white/80">
             Tell us what you&apos;re trying to build and we&apos;ll get back
-            to you with next steps — no pricing surprises, just a
+            to you with next steps – no pricing surprises, just a
             conversation.
           </p>
           <Button

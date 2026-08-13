@@ -60,7 +60,7 @@ export function ContactForm() {
     return (
       <div className="flex flex-col items-start gap-3 rounded-xl border border-border bg-paper p-6">
         <CheckCircle2 className="size-8 text-bold" />
-        <p className="font-semibold">Thanks — message sent.</p>
+        <p className="font-semibold">Thanks – message sent.</p>
         <p className="text-sm text-ink-soft">
           We&apos;ll get back to you shortly.
         </p>
