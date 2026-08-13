@@ -43,15 +43,15 @@ export default function Home() {
         <Container className="relative grid gap-12 py-24 md:grid-cols-2 md:items-center md:py-32">
           <div>
             <p className="font-mono text-sm font-semibold tracking-wider text-lime uppercase">
-              Web development studio
+              Addicted to Code
             </p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
               Custom websites &amp; web apps, built right.
             </h1>
             <p className="mt-6 max-w-lg text-lg text-white/80">
-              CodeHeads designs and builds bespoke websites and web
-              applications for businesses that want more than a template –
-              modern, fast, and made to grow with you.
+              We build websites and web applications for small businesses in
+              Australia that don&apos;t have the time or resources to do it
+              themselves – modern, fast, and made to grow with you.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Button
