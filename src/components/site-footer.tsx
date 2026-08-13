@@ -18,8 +18,8 @@ export function SiteFooter() {
         <div className="max-w-sm">
           <Logo dark />
           <p className="mt-4 text-sm text-white/70">
-            Custom websites and web apps for businesses that want more than a
-            template. Based in Australia, built with modern tools.
+            Addicted to Code. We build websites and web apps for small
+            businesses in Australia that want something built just for them.
           </p>
         </div>
 
