@@ -19,8 +19,8 @@ export function SiteFooter() {
           <Logo dark />
           <p className="mt-4 text-sm text-white/70">
             <span className="font-mono text-lime">Addicted to Code &gt;</span>{" "}
-            We build websites and web apps for small businesses in Australia
-            that want something built just for them.
+            We build websites, apps, and software for small businesses in
+            Australia that want something built just for them.
           </p>
         </div>
 

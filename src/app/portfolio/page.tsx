@@ -9,7 +9,7 @@ import { caseStudies } from "@/lib/portfolio";
 export const metadata: Metadata = {
   title: "Portfolio",
   description:
-    "Case studies of websites and web apps CodeHeads has built, including Party Hero, Get Loose, and Easy Boat Hire.",
+    "Case studies of websites, apps, and software CodeHeads has built, including Party Hero, Get Loose, and Easy Boat Hire.",
 };
 
 export default function PortfolioPage() {

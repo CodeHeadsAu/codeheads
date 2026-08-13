@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "CodeHeads builds custom websites and web apps – from marketing sites to full-stack applications with databases, logins, and payments.",
+    "CodeHeads builds websites, apps, and software – from marketing sites to complex internal tools with databases, logins, and payments.",
 };
 
 const INCLUDES = [
@@ -68,13 +68,13 @@ export default function ServicesPage() {
             Services
           </p>
           <h1 className="mt-2 max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
-            Custom websites &amp; web apps
+            Websites, apps &amp; software
           </h1>
           <p className="mt-6 max-w-xl text-lg text-ink-soft">
-            One service, done properly: a site built specifically for your
-            business – whether that&apos;s a sharp marketing site or a
-            full-blown web application with logins, data, and payments
-            behind it.
+            One service, done properly: websites, apps, and software
+            tailored to your business – whether that&apos;s a sharp
+            marketing site, an internal tool, or a full-blown application
+            with logins, data, and payments behind it.
           </p>
         </Container>
       </section>

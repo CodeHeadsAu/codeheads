@@ -20,11 +20,11 @@ const siteUrl = "https://codeheads.com.au";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "CodeHeads – Custom websites & web apps",
+    default: "CodeHeads – Websites, apps & software",
     template: "%s | CodeHeads",
   },
   description:
-    "CodeHeads builds custom websites and web apps for businesses that want more than a template – bespoke, modern, and built to grow.",
+    "CodeHeads builds websites, apps, and software – simple tools to complex systems – for businesses that want more than a template. Bespoke, modern, and built to grow.",
   openGraph: {
     type: "website",
     siteName: "CodeHeads",

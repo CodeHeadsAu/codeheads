@@ -46,12 +46,13 @@ export default function Home() {
               Addicted to Code
             </p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
-              Custom websites &amp; web apps, built right.
+              Websites, apps &amp; software, built right.
             </h1>
             <p className="mt-6 max-w-lg text-lg text-white/80">
-              We build websites and web applications for small businesses in
-              Australia that don&apos;t have the time or resources to do it
-              themselves – smart, fast, and made to grow with you.
+              We build websites, apps, and software, from simple tools to
+              complex systems, for small businesses in Australia that
+              don&apos;t have the time or resources to do it themselves –
+              smart, fast, and made to grow with you.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Button

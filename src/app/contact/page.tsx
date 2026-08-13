@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/contact-form";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with CodeHeads about a website or web app project. No pricing surprises, just a conversation.",
+    "Get in touch with CodeHeads about a website, app, or software project. No pricing surprises, just a conversation.",
 };
 
 export default function ContactPage() {
