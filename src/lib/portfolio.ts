@@ -15,7 +15,7 @@ export const caseStudies: CaseStudy[] = [
     name: "Party Hero",
     tagline: "Australian party & event supplier marketplace",
     summary:
-      "A full marketplace connecting event suppliers with people planning parties – browsing, enquiries, and supplier listings, built from the ground up as a production web app rather than a template.",
+      "Party Hero is a full marketplace connecting event suppliers with people planning parties – browsing, enquiries, and supplier listings, built from the ground up.",
     overview: [
       "Party Hero is a two-sided marketplace where event suppliers list what they offer and event organisers search by category, location, and event type to find them.",
       "We built the whole thing as a production web application: structured listings with category-specific details, supplier subscriptions handled through Stripe, and AI-assisted tools that help suppliers write better listing copy and SEO content.",
