@@ -120,7 +120,7 @@ export default function ServicesPage() {
       <section className="py-20">
         <Container className="flex flex-col items-center gap-6 text-center">
           <MessageSquare className="size-8 text-bold" />
-          <h2 className="max-w-lg text-3xl font-bold tracking-tight">
+          <h2 className="max-w-2xl text-2xl font-bold tracking-tight sm:text-nowrap sm:text-3xl">
             Not sure what you need yet? That&apos;s fine.
           </h2>
           <p className="max-w-md text-ink-soft">
