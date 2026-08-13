@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, Check } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowUpRight, Check } from "lucide-react";
 
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
@@ -54,8 +54,8 @@ export default async function CaseStudyPage({
           <h1 className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
             {project.name}
           </h1>
-          <div className="mt-6 flex flex-wrap gap-2">
-            {project.stack.map((tech) => (
+          <div className="mt-6 flex flex-wrap items-center gap-2">
+            {project.stack?.map((tech) => (
               <span
                 key={tech}
                 className="rounded-full bg-white/10 px-2.5 py-1 font-mono text-xs text-white"
@@ -63,6 +63,16 @@ export default async function CaseStudyPage({
                 {tech}
               </span>
             ))}
+            {project.externalUrl && (
+              <a
+                href={project.externalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 rounded-full bg-white/10 px-2.5 py-1 text-xs font-semibold text-lime hover:bg-white/20"
+              >
+                Visit site <ArrowUpRight className="size-3.5" />
+              </a>
+            )}
           </div>
         </Container>
       </section>

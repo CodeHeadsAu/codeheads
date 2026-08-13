@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Rocket, Wrench, Zap } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Rocket, Wrench, Zap } from "lucide-react";
 
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
@@ -124,7 +124,7 @@ export default function Home() {
                 Featured work
               </p>
               <h2 className="mt-2 text-3xl font-bold tracking-tight">
-                Recent build
+                Recent work
               </h2>
             </div>
             <Link
@@ -135,7 +135,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {caseStudies.map((project) => (
               <Card key={project.slug} className="p-6">
                 <p className="text-xs font-semibold tracking-wider text-ink-soft uppercase">
@@ -145,22 +145,36 @@ export default function Home() {
                 <p className="mt-3 text-sm text-ink-soft">
                   {project.summary}
                 </p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {project.stack.map((tech) => (
-                    <span
-                      key={tech}
-                      className="rounded-full bg-secondary px-2.5 py-1 font-mono text-xs text-bold"
+                {project.stack && (
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {project.stack.map((tech) => (
+                      <span
+                        key={tech}
+                        className="rounded-full bg-secondary px-2.5 py-1 font-mono text-xs text-bold"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                )}
+                <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2">
+                  <Link
+                    href={project.href}
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-bold hover:underline"
+                  >
+                    Read the case study <ArrowRight className="size-4" />
+                  </Link>
+                  {project.externalUrl && (
+                    <a
+                      href={project.externalUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-sm text-ink-soft hover:text-foreground hover:underline"
                     >
-                      {tech}
-                    </span>
-                  ))}
+                      Visit site <ArrowUpRight className="size-3.5" />
+                    </a>
+                  )}
                 </div>
-                <Link
-                  href={project.href}
-                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-bold hover:underline"
-                >
-                  Read the case study <ArrowRight className="size-4" />
-                </Link>
               </Card>
             ))}
           </div>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 
 import { Container } from "@/components/container";
 import { Card } from "@/components/ui/card";
@@ -9,7 +9,7 @@ import { caseStudies } from "@/lib/portfolio";
 export const metadata: Metadata = {
   title: "Portfolio",
   description:
-    "Case studies of websites and web apps CodeHeads has built, starting with Party Hero.",
+    "Case studies of websites and web apps CodeHeads has built, including Party Hero, Get Loose, and Easy Boat Hire.",
 };
 
 export default function PortfolioPage() {
@@ -32,7 +32,7 @@ export default function PortfolioPage() {
 
       <section className="py-20">
         <Container>
-          <div className="grid gap-6 sm:grid-cols-2">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {caseStudies.map((project) => (
               <Card key={project.slug} className="p-6">
                 <p className="text-xs font-semibold tracking-wider text-ink-soft uppercase">
@@ -42,33 +42,38 @@ export default function PortfolioPage() {
                 <p className="mt-3 text-sm text-ink-soft">
                   {project.summary}
                 </p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {project.stack.map((tech) => (
-                    <span
-                      key={tech}
-                      className="rounded-full bg-secondary px-2.5 py-1 font-mono text-xs text-bold"
+                {project.stack && (
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {project.stack.map((tech) => (
+                      <span
+                        key={tech}
+                        className="rounded-full bg-secondary px-2.5 py-1 font-mono text-xs text-bold"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                )}
+                <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2">
+                  <Link
+                    href={project.href}
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-bold hover:underline"
+                  >
+                    Read the case study <ArrowRight className="size-4" />
+                  </Link>
+                  {project.externalUrl && (
+                    <a
+                      href={project.externalUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-sm text-ink-soft hover:text-foreground hover:underline"
                     >
-                      {tech}
-                    </span>
-                  ))}
+                      Visit site <ArrowUpRight className="size-3.5" />
+                    </a>
+                  )}
                 </div>
-                <Link
-                  href={project.href}
-                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-bold hover:underline"
-                >
-                  Read the case study <ArrowRight className="size-4" />
-                </Link>
               </Card>
             ))}
-
-            <div className="flex flex-col items-start justify-center rounded-xl border border-dashed border-border p-6">
-              <p className="text-sm font-medium text-ink-soft">
-                More case studies coming soon.
-              </p>
-              <p className="mt-1 text-sm text-ink-soft">
-                We&apos;re just getting started.
-              </p>
-            </div>
           </div>
         </Container>
       </section>
