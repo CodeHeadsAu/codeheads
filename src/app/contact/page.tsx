@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="py-20">
+    <section className="bg-paper py-20">
       <Container className="grid gap-16 md:grid-cols-2">
         <div>
           <p className="font-mono text-sm font-semibold tracking-wider text-bold uppercase">
@@ -27,7 +27,7 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="rounded-2xl border border-border p-6 sm:p-8">
+        <div className="rounded-2xl border border-border bg-background p-6 sm:p-8">
           <ContactForm />
         </div>
       </Container>
