@@ -1,7 +1,9 @@
 import "server-only";
 import { Resend } from "resend";
 
-const TO_ADDRESS = "hello@codeheads.com.au";
+// Temporary: hello@codeheads.com.au isn't live yet, routing to Jason's
+// personal inbox in the meantime. Swap back once the mailbox is set up.
+const TO_ADDRESS = "jason@getloose.com.au";
 const FROM_ADDRESS =
   process.env.RESEND_FROM_EMAIL || "CodeHeads <notifications@codeheads.com.au>";
 
