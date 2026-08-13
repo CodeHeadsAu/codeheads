@@ -34,7 +34,7 @@ const INCLUDES = [
     icon: Rocket,
     title: "Deployment & launch",
     description:
-      "Hosted on Vercel with your domain, SSL, and analytics set up properly from day one.",
+      "Hosted with your domain, SSL, and analytics set up properly from day one.",
   },
 ];
 
