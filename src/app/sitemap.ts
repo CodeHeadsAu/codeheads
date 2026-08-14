@@ -5,7 +5,13 @@ import { caseStudies } from "@/lib/portfolio";
 const siteUrl = "https://codeheads.com.au";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/services", "/portfolio", "/contact"].map(
+  const staticRoutes = [
+    "",
+    "/services",
+    "/products",
+    "/portfolio",
+    "/contact",
+  ].map(
     (path) => ({
       url: `${siteUrl}${path}`,
       lastModified: new Date(),
